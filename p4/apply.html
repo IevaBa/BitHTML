@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply now</title>
+    <style>
+      section {
+        border: 1px solid grey;
+        width: 30%;
+        padding-left: 30px;
+      }
+      label {
+        margin: 5px;
+      }
+      input {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <form>
+        <h2>Fill the form</h2>
+        <label>Name</label> <br />
+        <input type="text" /> <br />
+        <label> Surname</label><br />
+        <input type="text" />
+        <br />
+        <label for="birth_date">Birth date</label> <br />
+        <input
+          type="date"
+          name="birth_date"
+          id="birth_date"
+          required
+          autofocus
+          autocomplete="nope"
+        />
+        <br />
+        <br />
+        <label for="course">Choose the course</label>
+        <select
+          name="course
+      "
+          id="course"
+        >
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+        <br />
+        <br />
+        <label>Choose the city:</label> <br />
+        <label for="vilnius">Vilnius</label>
+        <input type="radio" name="city" value="Vilnius" />
+        <label for="kaunas">Kaunas</label>
+        <input type="radio" name="city" value="Kaunas" />
+        <label for="klaipeda">Klaipeda</label>
+        <input type="radio" name="city" value="Klaipeda" />
+        <!-- būtinai turi būti tas pats name !!!! -->
+        <br />
+        <br />
+        <label>Mark if you need insurance</label>
+        <input type="checkbox" name="insurance" id="" />
+        <br />
+        <br />
+        <label>Email</label>
+        <input type="email" name="email" id="" />
+        <label>Password</label>
+        <input type="password" />
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </body>
+</html>
