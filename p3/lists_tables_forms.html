@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 12.3% 19.3%,
+          rgb(85, 88, 218) 0%,
+          rgb(95, 209, 249) 100.2%
+        );
+      }
+      h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: gainsboro;
+        margin: 0 50px;
+      }
+      p {
+        font-size: 28px;
+        font-weight: bolder;
+        margin: 0 80px;
+        color: #fecd51;
+      }
+      div {
+        font-size: 24px;
+        margin: 0px 50px;
+      }
+      ol {
+        font-size: 28px;
+        color: #fecd51;
+      }
+      ul {
+        font-size: 24px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        list-style: circle;
+        color: #ddd;
+      }
+      nav {
+        background: #22559c;
+      }
+      .men {
+        display: flex;
+        padding: 0px;
+        width: 1000px;
+      }
+      .women {
+        padding-left: 100px;
+      }
+      .nav {
+        list-style: none;
+        display: inline-block;
+        margin: 20px 20px;
+        padding: 5px 10px;
+        border: 2px solid white;
+        border-radius: 5px;
+        font-size: 20px;
+        color: white;
+      }
+      .events {
+        margin: 2px 50px;
+      }
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 30%;
+        margin: 0 20px;
+        background: whitesmoke;
+      }
+      table td,
+      table th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      table tr:hover {
+        background-color: #ddd;
+      }
+      table th {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: left;
+        background-color: darkgrey;
+        color: black;
+      }
+      .results {
+        font-size: 24px;
+        margin: 0 20px;
+        color: white;
+      }
+      .registration {
+        font-size: 18px;
+        color: black;
+      }
+      form {
+        text-align: right;
+      }
+      label {
+        text-align: left;
+        margin: 5px;
+      }
+      input {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>This is header</header>
+    <nav>
+      <ul>
+        <li class="nav">Naujienos</li>
+        <li class="nav">Archyvas</li>
+        <li class="nav">Galerija</li>
+        <li class="nav">Kontaktai</li>
+      </ul>
+    </nav>
+    <main>
+      <p>Current ratings !!!</p>
+      <div class="men">
+        <div>
+          <ol>
+            <li>Jonas Jonaitis</li>
+            <li>Petras Petraitis</li>
+            <li>Simas Simaitis</li>
+          </ol>
+        </div>
+        <div class="women">
+          <ol>
+            <li>Ona Onaitė</li>
+            <li>Rita Ritaitė</li>
+            <li>Vita Vitaitė</li>
+          </ol>
+        </div>
+      </div>
+      <!-- jei norim, kad su du listai eitų toje pačioje eilutėje  -->
+      <br />
+      <br />
+      <hr />
+      <h2>Upcoming Events:</h2>
+      <ul>
+        <li class="events">
+          Lithuanian Cup
+          <span style="color: #e46161; font-weight: bold">DEADLINE SOON</span>
+        </li>
+        <li class="events">2x2 Mix Relay</li>
+        <li class="events">Spring Cup</li>
+      </ul>
+    </main>
+    <br />
+    <br />
+    <table>
+      <p class="results">Knock Out Sprint Results:</p>
+      <thead>
+        <tr>
+          <th>Vieta</th>
+          <th>Vardas</th>
+          <th>Pavardė</th>
+          <th>Laikas</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Kristijonas</td>
+          <td>Donelaitis</td>
+          <td>20:25</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Balys</td>
+          <td>Sruoga</td>
+          <td>21:15</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Salomėja</td>
+          <td>Nėris</td>
+          <td>22:11</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <form>
+      <p class="registration">Registracija</p>
+      <label>Name</label>
+      <input type="text" />
+      <label> Surname</label>
+      <input type="text" />
+      <label>Age</label>
+      <input type="number" name="age" id=">1" />
+      <br />
+      <label for="gimimo_data">Birth date</label>
+      <input
+        type="text"
+        placeholder="YYYY-MM-DD"
+        pattern="(?:19|20)(?:(?:[13579][26]|[02468][048])-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))|(?:[0-9]{2}-(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-8])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:29|30))|(?:(?:0[13578]|1[02])-31)))"
+        name="birth_date"
+        id="birth_date"
+        required
+        autofocus
+        autocomplete="nope"
+      />
+      <label>Competition T-shirt</label>
+      <input type="checkbox" name="tshirt" id="" />
+
+      <br />
+      <label for="distancija1">5 km</label>
+      <input type="radio" id="distancija1" name="distancija" value="5km" />
+      <label for="distancija2">10 km</label>
+      <input type="radio" id="distancija2" name="distancija" value="10km" />
+      <label for="distancija2">15 km</label>
+      <input type="radio" id="distancija3" name="distancija" value="15km" />
+      <!-- būtinai turi būti tas pats name !!!! -->
+      <label>Email</label>
+      <input type="email" name="email" id="" />
+      <label>Password</label>
+      <input type="password" />
+      <input type="submit" value="Submit" />
+    </form>
+    <footer><p style="font-size: 18px">&copy by Ieva Ba</p></footer>
+  </body>
+</html>
