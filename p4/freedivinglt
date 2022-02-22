@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FreedivingLT is first Lithuanian freediving club"
+    />
+    <title>FreedivingLT</title>
+  </head>
+  <style>
+    body {
+      background: F0F0F0li;
+    }
+    header {
+      border: 2px solid gray;
+      background: radial-gradient(
+        circle at 10% 20%,
+        rgb(0, 107, 141) 0%,
+        rgb(0, 69, 91) 90%
+      );
+    }
+    aside {
+      border: 2px solid gray;
+      float: right;
+      width: 78%;
+      margin: 5px;
+    }
+    nav {
+      border: 2px solid gray;
+      float: left;
+      width: 20%;
+      background: radial-gradient(
+        circle at 10% 20%,
+        rgb(0, 107, 141) 0%,
+        rgb(0, 69, 91) 90%
+      );
+      padding-bottom: 500px;
+    }
+    a {
+      color: white;
+      border: 1px solid white;
+      border-radius: 10px;
+      font-size: 26px;
+      text-decoration: none;
+      padding: 8px;
+      cursor: pointer;
+    }
+    li {
+      list-style: none;
+      margin: 20px;
+      font-size: 20px;
+      padding: 5px;
+    }
+    h1 {
+      color: white;
+      padding-left: 20px;
+    }
+    h2 {
+      padding-left: 20px;
+    }
+    p {
+      font-size: 18px;
+      padding: 10px;
+      font-family: monospace;
+      line-height: 1.5;
+    }
+    img {
+      width: 500px;
+      float: right;
+      margin: 20px;
+    }
+    .congrads {
+      background: gainsboro;
+      padding-bottom: 350px;
+      padding-top: 20px;
+    }
+    .apply {
+      background: white;
+      color: #004c64;
+    }
+    .diver_foto {
+      width: 250px;
+      opacity: 50%;
+    }
+  </style>
+  <body>
+    <main>
+      <header>
+        <h1>Freediving LT</h1>
+      </header>
+      <br />
+      <nav>
+        <ul>
+          <li><a href="./about_freediving.html">About freediving</a></li>
+          <li><a href="./events.html">Upcoming events</a></li>
+          <li>
+            <a href="./vertical_blue_results.html">Vertical blue results</a>
+          </li>
+          <li><a class="apply" href="./apply.html">Apply now</a></li>
+        </ul>
+      </nav>
+      <aside>
+        <h2>News !!!</h2>
+        <p>
+          We still have a few places remaining in Spring freediving courses. The
+          weather at Dean’s Blue Hole has been extraordinary, so come on down
+          and add a little depth to your 2022! All courses will be taught by
+          resident VB instructor Jonas Jonaitis and other assistant instructors.
+          Write to us for more information. <br />
+          February 15–19, INTERMEDIATE – 3 places left
+          <br />
+          <strong>
+            March 2–5, BEGINNERS – FULL <br />
+            March 14–19, INTERMEDIATE – 4 places left <br />
+            April 12–16, INTERMEDIATE – FULL <br />
+            April 18–24, TRAINING CAMP – 5 places left</strong
+          >
+        </p>
+        <hr />
+        <br />
+        <p class="congrads">
+          We congratulate our member Ona Onaite with an outstanding result this
+          week and new record !!!
+          <img
+            src="https://www.deeperblue.com/wp-content/uploads/2018/06/hanako-01660.jpg"
+            alt="https://www.deeperblue.com/wp-content/uploads/2018/06/hanako-01660.jpg"
+          />
+        </p>
+      </aside>
+    </main>
+  </body>
+</html>
