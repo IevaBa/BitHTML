@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Apibūdinamos naminių gyvūnų rūšys ir elgesio ypatybės"
+    />
+    <!-- meta tag description pakelia SEO, apibūdinti spasmingai, vengti keywords -->
+    <title>Paths_images</title>
+    <style>
+      body {
+        background-color: #feffdf;
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        color: gray;
+        font-style: italic;
+      }
+      img {
+        border-radius: 10px;
+        height: 150px;
+        width: 200px;
+      }
+      .center_text {
+        text-align: center;
+      }
+      .right_text {
+        text-align: right;
+      }
+      .conteiner {
+        position: relative;
+      }
+      .centered {
+        position: absolute;
+        top: 50px;
+        left: 80px;
+        font-size: 20px;
+        font-weight: bolder;
+        color: grey;
+      }
+      /* absolute-viršutinis */
+      .lines {
+        color: dimgray;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Images and paths</h1>
+    <h2 style="margin: 5px 50px">Image with relative path (same directory)</h2>
+    <img src="./img/fish.jpeg" alt="fish" style="margin: 5px 150px" />
+    <h2 class="center_text">Image with relative path (different directory)</h2>
+    <center>
+      <img src="../img/katinas.jpeg" alt="katinas" />
+    </center>
+    <h2 class="right_text" style="margin: 5px 50px">
+      Image with place-hold.it
+    </h2>
+    <a href="https://place-hold.it/">
+      <img
+        src="https://place-hold.it/200&text=DOG&fontsize=20"
+        alt="dog"
+        style="float: right; margin: 5px 80px"
+      />
+    </a>
+    <h2>Placing text inside and next to image</h2>
+    <div class="conteiner">
+      <img
+        src="./img/golden-retriever-puppy.jpeg"
+        alt="golden-retriever-puppy"
+        style="opacity: 30%; margin: 0 20px; float: left"
+      />
+      <span class="lines">
+        line 1 <br />
+        line 2 <br />
+        line 3 <br />
+        line 4 <br />
+        line 5
+      </span>
+      <div class="centered">Centras</div>
+    </div>
+  </body>
+</html>
