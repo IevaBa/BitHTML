@@ -4,100 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="title" content="Learn more about Html, CSS, Javascript" />
+    <meta property="title" content="All Bit HTML projects" />
     <meta
-      name="description"
-      content="Some interesting insites about Html, CSS, Javascript and more "
+      property="description"
+      content="Here you will find all my HTML projects"
     />
-    <title>Programming blog</title>
+
+    <meta property="og:title" content="Bit HTML projects " />
+    <meta
+      property="og:description"
+      content="Here you will find all my HTML projects"
+    />
+    <meta
+      property="og:image"
+      content="https://news.blr.com/app/uploads/sites/3/2019/10/Team-project.jpg"
+    />
+    <meta property="og:url" content="https://ievaba.github.io/BitHTML/" />
+    <title>BitHTML</title>
     <style>
+      body {
+        background: #fbf9ff;
+      }
       header {
         font-family: "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia",
           serif;
         font-size: 20px;
-        color: #808080;
-        background: #eaf0f3;
+        color: white;
+        background: #945cf1;
         padding: 10px;
       }
       main {
-        padding: 10px;
-      }
-      h1 {
-        text-align: center;
-      }
-
-      p {
-        font-family: "Calendas Plus", "Crimson Text", "Hoefler Text", "Georgia",
-          serif;
-        font-size: 20px;
+        padding: 5px;
         line-height: 1.5;
-        text-align: justify;
       }
       a {
-        color: darkslategray;
-        font-size: 20px;
-        padding-right: 10px;
+        color: white;
+        background: #945cf1;
+        text-decoration: none;
+        font-size: 24px;
+        border: 1px solid#945cf1;
+        padding: 10px;
+        border-radius: 5px;
       }
-      img {
-        width: 120px;
-        padding-top: 10px;
+      a:hover {
+        background: white;
+        color: #945cf1;
       }
-      .conteiner {
-        position: relative;
+      li {
+        list-style-type: "👩‍💻";
+        padding-left: 10px;
+      }
+      footer {
+        position: fixed;
+        bottom: 5px;
+        width: 100%;
+      }
+      p {
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>IevaBa Blog - Home</h1>
-    </header>
+    <header><h1>Bit HTML projects</h1></header>
     <main>
       <nav>
-        <a href="html.html"> <img src="img/html.png" alt="html logo" /></a>
-        <a href="css.html"><img src="img/css.png" alt="html logo" /></a>
-        <a href="js.html"><img src="img/js.png" alt="html logo" /></a>
+        <ul>
+          <li><a href="p2/paths_images.html">Paths and images</a></li>
+          <br />
+          <li>
+            <a href="/p3/lists_tables_forms.html">Tables, lists and forms</a>
+          </li>
+          <br />
+          <li>
+            <a href="/p4/freedivinglt.html"
+              >HTML basics (<b>Freediving LT page</b>)</a
+            >
+          </li>
+        </ul>
       </nav>
-      <hr />
-
-      <div class="conteiner">
-        <img
-          src="img/ievaba.jpg"
-          alt="my profile photo"
-          style="width: 250px; float: right; padding-left: 50px"
-        />
-        <span class="lines">
-          <h2>About</h2>
-          <p>
-            Hi, i am Ieva Ba, a beginner programmer from Lithuania, currently
-            studying at Baltic Institute of Technology. Contrary to popular
-            belief, Lorem Ipsum is not simply random text. It has roots in a
-            piece of classical Latin literature from 45 BC, making it over 2000
-            years old. Richard McClintock, a Latin professor at Hampden-Sydney
-            College in Virginia, looked up one of the more obscure Latin words,
-          </p>
-          <p>
-            consectetur, from a Lorem Ipsum passage, and going through the cites
-            of the word in classical literature, discovered the undoubtable
-            source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de
-            Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
-            Cicero, written in 45 BC.
-          </p>
-        </span>
-      </div>
-      <hr />
-      <h3>Press below to:</h3>
-      <a href="img/seo.png" target="_blank">Check my SEO and A11Y reports</a>
-      <br /><br />
-      <a
-        href="https://www.opengraph.xyz/url/https%3A%2F%2Fievaba.github.io%2FBitHTML%2Fp4%2Ffreedivinglt.html%2F/ "
-        target="_blank"
-        >Preview my Open Graph Meta Tags</a
-      >
-      <br />
-      <br />
-      <a href="https://jsonformatter.org/html-validator" target="_blank"
-        >Check validation</a
-      >
     </main>
+    <footer>
+      <p>© Copyright by Ieva Ba</p>
+    </footer>
   </body>
 </html>
