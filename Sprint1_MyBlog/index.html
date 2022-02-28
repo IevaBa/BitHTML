@@ -41,14 +41,19 @@
       content="https://ievaba.github.io/BitHTML/Sprint1_MyBlog/"
     />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DCEZQLTW1B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-DCEZQLTW1B"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-DCEZQLTW1B');
-</script>
+      gtag("config", "G-DCEZQLTW1B");
+    </script>
     <title>Programming blog</title>
     <style>
       header {
@@ -94,10 +99,10 @@
       }
       footer {
         text-align: center;
-        position: fixed;
+        position: sticky;
         bottom: 0;
         width: 100%;
-        padding: 10px;
+        padding: 5px;
       }
       .conteiner {
         position: relative;
@@ -160,6 +165,9 @@
       <a href="https://jsonformatter.org/html-validator" target="_blank"
         >Check validation</a
       >
+      <br />
+      <br />
+      <a href="img/analytics.png" target="_blank">Check Google Analytics </a>
     </main>
     <footer>&#169; 2022, Ieva Baltriukaite</footer>
   </body>
